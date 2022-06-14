@@ -1,4 +1,46 @@
-html, body {
-  height: 100%;
-  width: 100%;
+.folha{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;    
+}
+
+.md{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.data{
+  font-style: italic;
+}
+
+.name{
+  font-weight: bold;
+}
+
+.resumo{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sub{
+  background: #F8F8FF;  
+}
+
+#lista1{
+  margin-top:750px;
+  margin-left:50px;  
+}
+@media screen and (min-width: 1770px) {
+  #lista1{
+    margin-top:950px;
+  }
 }
