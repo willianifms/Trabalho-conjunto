@@ -8,31 +8,31 @@ Este projeto demonstra como consumir dados de uma API JSON e exibi-los em um sit
 
 ## Funcionalidades
 
-Carrega as últimas notícias da API JSON.
-Exibe a notícia principal em destaque com imagem, título, autor, data e resumo.
-Apresenta uma lista de outras notícias com título, nome da fonte, data, autor e link para a notícia completa.
-Trata erros de forma personalizada e informativa.
+1. **Exibição de Notícias:**
+   - O código busca artigos de notícias na API.
+   - Ele cria uma classe personalizada `Noticia` para representar cada artigo.
+   - Os artigos são exibidos com título, fonte, data de publicação, autor, descrição e um link para o artigo completo.
+
+2. **Tratamento de Erros:**
+   - O código inclui uma classe `ErroCustomizado` para lidar com erros personalizados.
+   - Se algum dado necessário estiver ausente na resposta da API, um erro é lançado.
+
+3. **Destaque para Notícias Principais:**
+   - A classe `NoticiaDestaque` estende `Noticia` e adiciona um campo de imagem.
+   - O principal artigo de notícias (primeiro na resposta da API) é exibido com destaque, incluindo uma imagem.
+
+
 ## Tecnologias utilizadas
 
-JavaScript
-XMLHttpRequest
-Classes e objetos
-Manipulação do DOM
-Tratamento de erros
+- JavaScript
+- XMLHttpRequest
+- Classes e objetos
+- Manipulação do DOM
+- Tratamento de erros
+  
 ## Como usar
 
 Clone o repositório para o seu computador.
-Abra o arquivo index.html em um navegador web.
-Verifique se a API está disponível e funcionando corretamente.
-Se necessário, ajuste o código JavaScript para personalizar a aparência e o comportamento do site.
-## Observações
-
-Este é um projeto completo e funcional. Você pode usá-lo como base para seus próprios projetos.
-O código é bem documentado e fácil de entender.
-O projeto é modular e pode ser facilmente adaptado às suas necessidades.
-## Melhorias e sugestões
-
-Adicionar paginação para navegar pelas notícias.
-Implementar um filtro para buscar notícias por palavra-chave.
-Permitir que o usuário personalize a ordem das notícias.
-Integrar com redes sociais para compartilhar as notícias.
+- Abra o arquivo index.html em um navegador web.
+- Verifique se a API está disponível e funcionando corretamente.
+- Se necessário, ajuste o código JavaScript para personalizar a aparência e o comportamento do site.
